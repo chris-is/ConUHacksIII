@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {font-family: Arial;}
+body {font-family: Calibri;}
 * {box-sizing: border-box}
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -79,7 +79,7 @@ hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
- 
+
 /* The Close Button (x) */
 .close {
     position: absolute;
@@ -208,15 +208,14 @@ span.psw {
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
-}
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
@@ -252,7 +251,7 @@ span.psw {
 
       <label><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
+
       <label>
         <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
       </label>
@@ -287,7 +286,7 @@ window.onclick = function(event) {
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id02" class="modal">
-  
+
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -300,7 +299,7 @@ window.onclick = function(event) {
 
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-        
+
       <button type="submit">Login</button>
       <label>
         <input type="checkbox" checked="checked"> Remember me
@@ -328,4 +327,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
