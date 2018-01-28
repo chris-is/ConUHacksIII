@@ -115,7 +115,7 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
+    .cancelbtn,.signupbtn {
        width: 100%;
     }
 }
@@ -208,7 +208,7 @@ span.psw {
     font-weight: bold;
 }
 
-.close:hover,
+.close:hover
 .close:focus {
     color: red;
     cursor: pointer;
@@ -220,14 +220,7 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
-/* Centering */
-.center {
-    text-align: center;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    padding: 10px;
-}
+
 
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)}

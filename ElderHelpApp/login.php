@@ -255,12 +255,6 @@ span.psw {
           <label><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-      <label>
-        <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
-      </label>
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
 
