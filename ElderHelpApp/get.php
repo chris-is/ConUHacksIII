@@ -64,13 +64,12 @@
 	use Twilio\Rest\Client;
 
 	// Your Account SID and Auth Token from twilio.com/console
-	$sid = 'ACc2ab37dcc6575a7bb3cace812ff249f1';
-	$token = '7fb6753bcf08ffde9a28209aef12e461';
+	$sid = 'AC0ff288b4ec67aa2d78e936313ab760f7';
+	$token = '196f3c8f8b9e772585fb6fe12b0c0ff3';
 	$client = new Client($sid, $token);
 
 	// Use the client to do fun stuff like send text messages!
 
-    echo("<script>console.log('PHP: ".$name."');</script>");
     if($frequency==="once a day") {
         $temp = '+' . $phone;
         $output = 'Take ' . $dosage . 'of ' . $product;
@@ -79,7 +78,7 @@
 	    $temp,
 	    array(
 	        // A Twilio phone number you purchased at twilio.com/console
-	        'from' => '+14387956891',
+	        'from' => '+18198095743',
 	        // the body of the text message you'd like to send
 	        'body' => $output
 	    )
