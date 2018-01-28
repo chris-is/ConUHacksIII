@@ -82,6 +82,16 @@ button:hover {
 	cursor: pointer;
 }
 
+button#add_row.btn.btn-info {
+  margin-top: 10px;
+  background-color: #1EB18A;
+}
+
+button#del_row.btn.btn-info {
+  margin-top: 10px;
+  background-color: #1EB18A;
+}
+
 iframe {
 	border: none !important;
 }
@@ -172,36 +182,59 @@ table {
 
 th, td {
   font-weight: unset;
-  padding-right: 10px;
 }
 
-.column1 {
-  width: 33%;
-  padding-left: 40px;
+
+#tb1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.column2 {
-  width: 13%;
+#tb1 td, #tb1 th, #tb1 tr {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-.column3 {
-  width: 22%;
+#tb1 tr:nth-child(even){background-color: #f2f2f2;}
+
+
+#tb1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
 
-.column4 {
-  width: 19%;
+
+
+.td.cell100column1 {
+  max-width: 90px;
 }
 
-.column5 {
-  width: 13%;
+.td.cell100column2 {
+  max-width: 90px;
 }
 
-.column6 {
-  width: 13%;
+.td.cell100column3 {
+  max-width: 90px;
 }
 
-.column7 {
-  width: 13%;
+.td.cell100column4 {
+  max-width: 90px;
+}
+
+.td.cell100column5 {
+  max-width: 90px;
+}
+
+.td.cell100column6 {
+  max-width: 90px;
+}
+
+.td.cell100column7 {
+  max-width: 90px;
 }
 
 .table100-head th {
@@ -210,7 +243,8 @@ th, td {
 }
 
 .table100-body td {
-  padding-top: 16px;
+  padding-top: 40px;
+  padding-left: 15px;
   padding-bottom: 16px;
 }
 

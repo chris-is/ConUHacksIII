@@ -84,6 +84,7 @@
 	        'body' => $output
 	    )
 	);
+<<<<<<< HEAD
     if($frequency==="twice a day") {
         $temp = '+' . $phone;
         $output = 'Take ' . $dosage . 'of ' . $product;
@@ -99,5 +100,7 @@
     );
 
 
+=======
+>>>>>>> chris
 }
 ?>

@@ -6,7 +6,9 @@ $(document).ready(function(){
      $("#tb1").each(function () {
          var tds = '<tr class="row100 body">';
          jQuery.each($('tr:last td', this), function () {
-             tds += '<td class="cell100 column1">' + $(this).html() + '</td>';
+         	var i = 1;
+         	temp = 
+             tds += '<td class="cell100column">' + $(this).html() + '</td>';
          });
          tds += '</tr>';
          if ($('tbody', this).length > 0) {
