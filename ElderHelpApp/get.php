@@ -72,7 +72,7 @@
 
     if($frequency==="once a day") {
         $temp = '+' . $phone;
-        $output = 'Take ' . $dosage . 'of ' . $product;
+        $output = 'Take ' . $dosage . ' of ' . $product;
 	$client->messages->create(
 	    // the number you'd like to send the message to
 	    $temp,
