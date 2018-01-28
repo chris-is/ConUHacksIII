@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {font-family: Calibri;}
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+body {font-family: Times new Roman;}
 * {box-sizing: border-box}
 /* Full-width input fields */
 input[type=text], input[type=password] {
