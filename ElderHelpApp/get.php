@@ -84,20 +84,5 @@
 	        'body' => $output
 	    )
 	);
-    if($frequency==="twice a day") {
-        $temp = '+' . $phone;
-        $output = 'Take ' . $dosage . 'of ' . $product;
-    $client->messages->create(
-        // the number you'd like to send the message to
-        $temp,
-        array(
-            // A Twilio phone number you purchased at twilio.com/console
-            'from' => '+14387956891',
-            // the body of the text message you'd like to send
-            'body' => $output
-        )
-    );
-
-
 }
 ?>
