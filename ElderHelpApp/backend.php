@@ -7,8 +7,8 @@ $app = new \Slim\App;
 
 
 
-$app->post('/parse', function ($request) {
-	require 'parse.php';
+$app->post('/update', function ($request) {
+	require 'update.php';
 });
 
 $app->run();

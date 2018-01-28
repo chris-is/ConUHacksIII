@@ -40,59 +40,84 @@
 									<td class="cell100column4"><input id="i4" value="dosage" type="text"/></td>
 									<td class="cell100column5"><input id="i5" value="dose_unit" type="text"/></td>
 									<td class="cell100column6"><input id="i6" value="frequency" type="text"/></td>
-									<td class="cell100column7"><button type="button" class="btn btn-info" id="submit">Submit</button></td>
+									<td class="cell100column7"><input id="i7" value="phone" type="text"/></td>
+									<td class="cell100column8"><button type="button" class="btn btn-info" id="submit">Submit</button></td>
 								</tr>
 							</tbody>
 						</table>
 
 						<script>
+						var id;
+						var name;
+						var product;
+						var dosage;
+						var dose;
+						var frequency;
+						var phone;
+
 						$("#tb1 input[id^='i1']").on('change', function(e) {
   						var data1 = $(this).val();
-  						alert(data1);
+  						//alert(id)
+  						id = data1;
 						});
 						$("#tb1 input[id^='i2']").on('change', function(e) {
   						var data2 = $(this).val();
-  						alert(data2);
+
+  						name = data2;
+  						//alert(name);
 						});
 						$("#tb1 input[id^='i3']").on('change', function(e) {
   						var data3 = $(this).val();
-  						alert(data3);
+
+  						product = data3;
+  						//alert(product);
 						});
 						$("#tb1 input[id^='i4']").on('change', function(e) {
   						var data4 = $(this).val();
-  						alert(data4);
+
+  						dosage = data4;
+  						//alert(dosage);
 						});
 						$("#tb1 input[id^='i5']").on('change', function(e) {
   						var data5 = $(this).val();
-  						alert(data5);
+
+  						dose = data5;
+  						//alert(dose);
 						});
 						$("#tb1 input[id^='i6']").on('change', function(e) {
   						var data6 = $(this).val();
-  						alert(data6);
+
+  						frequency = data6;
+  						//alert(frequency);
 						});
+
+						$("#tb1 input[id^='i7']").on('change', function(e) {
+  						var data7 = $(this).val();
+
+  						phone = data7;
+  						//alert(phone);
+						});
+						
 
 
 						$("#submit").click(function () {
 
 						$('#tb1 .cell100column1').each(function()
 						{
-				          var base_url="http://localhost/ConUHacksIII/ElderHelpApp/";
+				          var base_url="http://localhost/ConUHacksIII/ElderHelpApp";
 				          var url = base_url+'/update';
-				          var temp = window.location.search.substring(1);
-				          var parts = temp.split("=",2);
-				          var user = parts[1];
-				          var postdata = "user=" + user;
+				          var postdata = "id=" + id + "&name=" + name + "&product=" + product + "&dosage=" + dosage + "&dose=" + dose + "&frequency=" + frequency + "&phone=" + phone;
+				          alert(postdata);
 				          $.ajax({
 				            type:"POST",
 				            url:url,
 				            data:postdata,
 				            success:function(data){
-				              $("#mainContent").html("");
-				              $("#mainContent").prepend(data);
+				              alert("success");
+				              alert(data);
 			            }
-			          });
-			        });
-						});
+				          });
+				        });
 
 						$('#tb1 .cell100column2').each(function()
 						{
@@ -118,6 +143,7 @@
 						{
 							
 						});	
+
 						});
 						</script>
 						<!-- <a href="#" class="btn btn-info" role="button">Link Button</a> -->
