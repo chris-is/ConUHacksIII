@@ -255,17 +255,14 @@ span.psw {
           <label><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
 
-<<<<<<< HEAD
       <label><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
       <label>
         <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
       </label>
-=======
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
->>>>>>> origin/mukit-2
 
           <label><b>Repeat Password</b></label>
           <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -296,18 +293,13 @@ span.psw {
     }
     </script>
 
-<<<<<<< HEAD
-<h2>Modal Login Form</h2>
-=======
 
 
 
     <h2>Modal Login Form</h2>
->>>>>>> origin/mukit-2
 
     <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
 
-<<<<<<< HEAD
 <div id="id02" class="modal">
 
   <form class="modal-content animate" action="/action_page.php">
@@ -328,7 +320,6 @@ span.psw {
         <input type="checkbox" checked="checked"> Remember me
       </label>
     </div>
-=======
     <div id="id02" class="modal">
 
       <form class="modal-content animate" action="action_page.php">
@@ -340,7 +331,6 @@ span.psw {
         <div class="container">
           <label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
->>>>>>> origin/mukit-2
 
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
