@@ -1,5 +1,16 @@
-body {font-family: Arial;}
+body {font-family: "Arial";
+background-color: #FEFEFE;
+height = 100%;
+display: table-cell;
+vertical-align: middle;
+}
 * {box-sizing: border-box}
+
+html{height = 100%
+display: table;
+margin: auto;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -18,14 +29,15 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4caaaf;
+    color: grey;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    border-radius: 6px;
 }
 
 button:hover {
@@ -42,6 +54,7 @@ button:hover {
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
+
 }
 
 /* Add padding to container elements */
@@ -94,7 +107,7 @@ hr {
 }
 
 /* Clear floats */
-.clearfix::after {
+.clearfix:after {
     content: "";
     clear: both;
     display: table;
@@ -102,7 +115,7 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
+    .cancelbtn,.signupbtn {
        width: 100%;
     }
 }
@@ -121,9 +134,9 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #4ebfba;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 18px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -195,7 +208,7 @@ span.psw {
     font-weight: bold;
 }
 
-.close:hover,
+.close:hover
 .close:focus {
     color: red;
     cursor: pointer;
@@ -207,14 +220,7 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
-/* Centering */
-.center {
-    text-align: center;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    padding: 10px;
-}
+
 
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)}

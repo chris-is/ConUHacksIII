@@ -23,7 +23,8 @@ if(isset($_POST['username'])){
   $result=mysqli_query($link,$sql);
 
   if(mysqli_num_rows($result)==1){
-    header('Location: ../ElderHelpApp');
+    $data="Worked";
+    echo "Worked";
     exit();
   }
   else{
