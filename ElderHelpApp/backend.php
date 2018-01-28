@@ -11,5 +11,10 @@ $app->post('/update', function ($request) {
 	require 'update.php';
 });
 
+$app->post('/get', function ($request) {
+	require 'get.php';
+});
+
+
 $app->run();
 ?>
