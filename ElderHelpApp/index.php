@@ -24,10 +24,22 @@
 </head>
 
 <body>
-	<h1>Data Table</h1>
-
+	<h1>Users</h1>
+					<br>
+					<br>
 					<div class="table100-body js-pscroll">
 						<table id="tb1">
+
+							<tr class="row2000">
+								<th>Patient id</th>
+								<th>Name</th>
+								<th>Medication</th>
+								<th>Dosage</th>
+								<th>Dose unit</th>
+								<th>Frequency</th>
+								<th>Phone</th>
+								<th>Start hour</th>
+							</tr>
 							<tbody>
 								<tr  class="row100 body" id="tr_row">
 									<td class="cell100column1"><input type="text" id="i1" value="patient_id"/></td>
