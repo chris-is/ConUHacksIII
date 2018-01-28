@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <style>
 <head>
 <link rel="stylesheet" href="styles.css">
@@ -235,12 +234,9 @@ span.psw {
     }
 }
 </style>
-=======
-
 <head>
   <link rel="stylesheet" type="text/css" href="css/login-signup.css">
 </head>
->>>>>>> chris
 <body>
 
 <h2>Modal Signup Form</h2>
@@ -289,9 +285,6 @@ window.onclick = function(event) {
 }
 </script>
 
-
-
-
 <h2>Modal Login Form</h2>
 
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
@@ -301,7 +294,7 @@ window.onclick = function(event) {
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="avatar.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
