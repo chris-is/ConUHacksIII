@@ -63,7 +63,7 @@
   						var data2 = $(this).val();
 
   						name = data2;
-  						//alert(name);
+  						alert(name);
 						});
 						$("#tb1 input[id^='i3']").on('change', function(e) {
   						var data3 = $(this).val();
@@ -111,8 +111,8 @@
 						{
 				          var base_url="http://localhost/ConUHacksIII/ElderHelpApp";
 				          var url = base_url+'/update';
-				          var postdata = "id=" + id + "patientid=" + "&name=" + name + "&product=" + product + "&dosage=" + dosage + "&dose=" + dose + "&frequency=" + frequency + "&phone=" + phone + "&start=" + start;
-				          //alert(postdata);
+				          var postdata = "id=" + id + "&name=" + name + "&product=" + product + "&dosage=" + dosage + "&dose=" + dose + "&frequency=" + frequency + "&phone=" + phone + "&start=" + start;
+				          alert(postdata);
 				          $.ajax({
 				            type:"POST",
 				            url:url,
@@ -133,7 +133,7 @@
 				            url:url,
 				            data:postdata,
 				            success:function(data){
-				            	//alert("success");
+				            	alert("success");
 				            	//alert(data);
 				            }
 				          });

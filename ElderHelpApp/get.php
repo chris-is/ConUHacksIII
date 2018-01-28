@@ -16,7 +16,8 @@
    	$output = $stmt->fetchAll();
 
 
-   $count = array();
+    $count = array();
+    echo(json_encode($output));
 
     $i=0;
     $id2=0;
@@ -50,15 +51,10 @@
       
     }
 
-    $i=0;
-    $j=1;
-    if($i < $j)
-    {
-    	echo "a is bigget than";
-    }
+
 
     //TESTING
-    //echo("<script>console.log('PHP: ".$phone."');</script>");
+    echo "<script type='text/javascript'>alert('$id2');</script>";
     //echo("<script>console.log('PHP: ".$start."');</script>");
 	//Display the contents of data
 
@@ -73,16 +69,35 @@
 	$client = new Client($sid, $token);
 
 	// Use the client to do fun stuff like send text messages!
+
+    echo("<script>console.log('PHP: ".$name."');</script>");
+    if($frequency==="once a day") {
+        $temp = '+' . $phone;
+        $output = 'Take ' . $dosage . 'of ' . $product;
 	$client->messages->create(
 	    // the number you'd like to send the message to
-	    '+15147077329',
+	    $temp,
 	    array(
 	        // A Twilio phone number you purchased at twilio.com/console
 	        'from' => '+14387956891',
 	        // the body of the text message you'd like to send
-	        'body' => "Remember to take meds!"
+	        'body' => $output
 	    )
 	);
+    if($frequency==="twice a day") {
+        $temp = '+' . $phone;
+        $output = 'Take ' . $dosage . 'of ' . $product;
+    $client->messages->create(
+        // the number you'd like to send the message to
+        $temp,
+        array(
+            // A Twilio phone number you purchased at twilio.com/console
+            'from' => '+14387956891',
+            // the body of the text message you'd like to send
+            'body' => $output
+        )
+    );
 
-	
+
+}
 ?>
