@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <style>
 <head>
 <link rel="stylesheet" href="styles.css">
@@ -234,6 +235,12 @@ span.psw {
     }
 }
 </style>
+=======
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/login-signup.css">
+</head>
+>>>>>>> chris
 <body>
 
 <h2>Modal Signup Form</h2>

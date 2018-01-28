@@ -1,25 +1,30 @@
 
-(function ($) {
-	"use strict";
-	$('.column100').on('mouseover',function(){
-		var table1 = $(this).parent().parent().parent();
-		var table2 = $(this).parent().parent();
-		var verTable = $(table1).data('vertable')+"";
-		var column = $(this).data('column') + ""; 
 
-		$(table2).find("."+column).addClass('hov-column-'+ verTable);
-		$(table1).find(".row100.head ."+column).addClass('hov-column-head-'+ verTable);
+$(document).ready(function(){
+
+	$("#add_row").click(function () {
+     $("#tb1").each(function () {
+         var tds = '<tr class="row100 body">';
+         jQuery.each($('tr:last td', this), function () {
+             tds += '<td class="cell100 column1">' + $(this).html() + '</td>';
+         });
+         tds += '</tr>';
+         if ($('tbody', this).length > 0) {
+             $('tbody', this).append(tds);
+         } else {
+             $(this).append(tds);
+         }
+     });
+
 	});
 
-	$('.column100').on('mouseout',function(){
-		var table1 = $(this).parent().parent().parent();
-		var table2 = $(this).parent().parent();
-		var verTable = $(table1).data('vertable')+"";
-		var column = $(this).data('column') + ""; 
-
-		$(table2).find("."+column).removeClass('hov-column-'+ verTable);
-		$(table1).find(".row100.head ."+column).removeClass('hov-column-head-'+ verTable);
+	$("#del_row").click(function() {
+		$('#tb1 tr:last').remove();
+		//$("#tr_row").remove();
 	});
+
+	var table = $('#tb1').DataTable();
+
     
 
-})(jQuery);
+});
