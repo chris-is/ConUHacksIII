@@ -23,8 +23,15 @@ $(document).ready(function(){
 		//$("#tr_row").remove();
 	});
 
-	var table = $('#tb1').DataTable();
 
-    
+	$("#submit").click(function() {
+		var $row = $(this).closest("tr");
+		$tds = $row.find("td");
+		
+		$.each($tds, function() {               // Visits every single <td> element
+    		console.log($(this).text());        // Prints out the text within the <td>
+		});
+	}).get();
+
 
 });
