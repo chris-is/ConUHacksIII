@@ -24,7 +24,11 @@
 </head>
 
 <body>
-	<h1>Users</h1>
+
+<div class="container">
+	<div class="jumbotron" style="background-color: !transparent">
+		<h1>REGISTERED PEOPLE</h1>
+
 					<br>
 					<br>
 					<div class="table100-body js-pscroll">
@@ -158,9 +162,12 @@
 
 						<!-- <a href="#" class="btn btn-info" role="button">Link Button</a> -->
 						<button type="button" class="btn btn-info" id="add_row">Add Row</button>
-						<button type="button" class="btn btn-info" id="del_row">Del Row</button>
+						<button type="button" class="btn btn-info" id="del_row">Delete Row</button>
 						<!-- <a href="#" id="insert-more"> Add New Row </a> -->
 					</div>
+				</div>
 
+
+				</div>
 </body>
 </html>
